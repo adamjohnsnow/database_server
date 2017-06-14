@@ -9,5 +9,13 @@ You receive a message from a prospective employer:
 git clone https://github.com/adamjohnsnow/database_server.git
 cd database_server
 npm install
+jasmine
+mocha
 nodemon
 ```
+### Technologies
+* NodeJS
+* Express
+Testing:
+* Jasmine
+* Mocha/Chai/Zombie

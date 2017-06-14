@@ -2,7 +2,6 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var Memory = require('./src/Memory');
-var database = [];
 
 app.listen(4000, function () {
   console.log('running on port 4000')
@@ -19,7 +18,7 @@ app.get('/', function(req, res){
 })
 
 app.get('/set', function(req, res){
-  var newKey = Object.keys(req.query).join('')
+  var newKey = Object.keys(req.query)[0]
   var newValue = req.query[newKey]
   memory.saveRecord(newKey, newValue)
   res.redirect('/')
