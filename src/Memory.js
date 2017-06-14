@@ -1,5 +1,4 @@
-var Memory = function(){
-  this.database = []
+var Memory = function(exports){
+  this.database = [];
 }
-
 module.exports = Memory;
